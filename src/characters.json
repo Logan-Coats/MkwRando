@@ -1,596 +1,125 @@
 {
-    "characters": [
+    "characters": 
+    [
         {
-            "name": "Baby Mario",
-            "image": "./assets/char-images/babymario.png",
-            "karts": [
-                {
-                    "name": "Standard Kart S",
-                    "image": "./assets/kart-images/kart-s.png"
-                },
-                {
-                    "name": "Booster Seat",
-                    "image": "./assets/kart-images/boosterseat.png"
-                },
-                {
-                    "name": "Mini Beast",
-                    "image": "./assets/kart-images/minibeast.png"
-                },
-                {
-                    "name": "Tiny Titan",
-                    "image": "./assets/kart-images/tinytitan.png"
-                },
-                {
-                    "name": "Cheep Charger",
-                    "image": "./assets/kart-images/cheepcharger.png"
-                },
-                {
-                    "name": "Blue Falcon",
-                    "image": "./assets/kart-images/bluefalcon.png"
-                },
-                {
-                    "name": "Standard Bike S",
-                    "image": "./assets/kart-images/bike-s.png"
-                },
-                {
-                    "name": "Bullet Bike",
-                    "image": "./assets/kart-images/bulletbike.png"
-                },
-                {
-                    "name": "Bit Bike",
-                    "image": "./assets/kart-images/bitbike.png"
-                },
-                {
-                    "name": "Quacker",
-                    "image": "./assets/kart-images/quacker.png"
-                },{
-                    "name": "Magikruiser",
-                    "image": "./assets/kart-images/magikruiser.png"
-                },
-                {
-                    "name": "Jet Bubble",
-                    "image": "./assets/kart-images/jetbubble.png"
-                }
-            ]
+            "name":"Baby Mario",
+            "image":"./assets/char-images/babymario.png",
+            "class":"s"
         },
         {
-            "name": "Baby Luigi",
-            "image": "./assets/char-images/babyluigi.png",
-            "karts": [
-                {
-                    "name": "Standard Kart S",
-                    "image": "./assets/kart-images/kart-s.png"
-                },
-                {
-                    "name": "Booster Seat",
-                    "image": "./assets/kart-images/boosterseat.png"
-                },
-                {
-                    "name": "Mini Beast",
-                    "image": "./assets/kart-images/minibeast.png"
-                },
-                {
-                    "name": "Tiny Titan",
-                    "image": "./assets/kart-images/tinytitan.png"
-                },
-                {
-                    "name": "Cheep Charger",
-                    "image": "./assets/kart-images/cheepcharger.png"
-                },
-                {
-                    "name": "Blue Falcon",
-                    "image": "./assets/kart-images/bluefalcon.png"
-                },
-                {
-                    "name": "Bullet Bike",
-                    "image": "./assets/kart-images/bulletbike.png"
-                },
-                {
-                    "name": "Bit Bike",
-                    "image": "./assets/kart-images/bitbike.png"
-                },
-                {
-                    "name": "Quacker",
-                    "image": "./assets/kart-images/quacker.png"
-                },{
-                    "name": "Magikruiser",
-                    "image": "./assets/kart-images/magikruiser.png"
-                },
-                {
-                    "name": "Jet Bubble",
-                    "image": "./assets/kart-images/jetbubble.png"
-                }
-            ]
+            "name":"Baby Luigi",
+            "image":"./assets/char-images/babyluigi.png",
+            "class":"s"
         },
         {
-            "name": "Baby Peach",
-            "image": "./assets/char-images/babypeach.png",
-            "karts": [
-                {
-                    "name": "Booster Seat",
-                    "image": "./assets/kart-images/boosterseat.png"
-                },
-                {
-                    "name": "Mini Beast",
-                    "image": "./assets/kart-images/minibeast.png"
-                },
-                {
-                    "name": "Tiny Titan",
-                    "image": "./assets/kart-images/tinytitan.png"
-                },
-                {
-                    "name": "Cheep Charger",
-                    "image": "./assets/kart-images/cheepcharger.png"
-                },
-                {
-                    "name": "Blue Falcon",
-                    "image": "./assets/kart-images/bluefalcon.png"
-                },
-                {
-                    "name": "Bullet Bike",
-                    "image": "./assets/kart-images/bulletbike.png"
-                },
-                {
-                    "name": "Bit Bike",
-                    "image": "./assets/kart-images/bitbike.png"
-                },
-                {
-                    "name": "Quacker",
-                    "image": "./assets/kart-images/quacker.png"
-                },{
-                    "name": "Magikruiser",
-                    "image": "./assets/kart-images/magikruiser.png"
-                },
-                {
-                    "name": "Jet Bubble",
-                    "image": "./assets/kart-images/jetbubble.png"
-                }
-            ]
+            "name":"Baby Peach",
+            "image":"./assets/char-images/babypeach.png",
+            "class":"s"
         },
         {
-            "name": "Baby Daisy",
-            "image": "./assets/char-images/babydaisy.png",
-            "karts": [
-                {
-                    "name": "Booster Seat",
-                    "image": "./assets/kart-images/boosterseat.png"
-                },
-                {
-                    "name": "Mini Beast",
-                    "image": "./assets/kart-images/minibeast.png"
-                },
-                {
-                    "name": "Tiny Titan",
-                    "image": "./assets/kart-images/tinytitan.png"
-                },
-                {
-                    "name": "Cheep Charger",
-                    "image": "./assets/kart-images/cheepcharger.png"
-                },
-                {
-                    "name": "Blue Falcon",
-                    "image": "./assets/kart-images/bluefalcon.png"
-                },
-                {
-                    "name": "Bullet Bike",
-                    "image": "./assets/kart-images/bulletbike.png"
-                },
-                {
-                    "name": "Bit Bike",
-                    "image": "./assets/kart-images/bitbike.png"
-                },
-                {
-                    "name": "Quacker",
-                    "image": "./assets/kart-images/quacker.png"
-                },{
-                    "name": "Magikruiser",
-                    "image": "./assets/kart-images/magikruiser.png"
-                },
-                {
-                    "name": "Jet Bubble",
-                    "image": "./assets/kart-images/jetbubble.png"
-                }
-            ]
+            "name":"Baby Daisy",
+            "image":"./assets/char-images/babydaisy.png",
+            "class":"s"
         },
         {
-            "name": "Toad",
-            "image": "./assets/char-images/toad.png",
-            "karts": [
-                {
-                    "name": "Booster Seat",
-                    "image": "./assets/kart-images/boosterseat.png"
-                },
-                {
-                    "name": "Mini Beast",
-                    "image": "./assets/kart-images/minibeast.png"
-                },
-                {
-                    "name": "Tiny Titan",
-                    "image": "./assets/kart-images/tinytitan.png"
-                },
-                {
-                    "name": "Cheep Charger",
-                    "image": "./assets/kart-images/cheepcharger.png"
-                },
-                {
-                    "name": "Blue Falcon",
-                    "image": "./assets/kart-images/bluefalcon.png"
-                },
-                {
-                    "name": "Bullet Bike",
-                    "image": "./assets/kart-images/bulletbike.png"
-                },
-                {
-                    "name": "Bit Bike",
-                    "image": "./assets/kart-images/bitbike.png"
-                },
-                {
-                    "name": "Quacker",
-                    "image": "./assets/kart-images/quacker.png"
-                },{
-                    "name": "Magikruiser",
-                    "image": "./assets/kart-images/magikruiser.png"
-                },
-                {
-                    "name": "Jet Bubble",
-                    "image": "./assets/kart-images/jetbubble.png"
-                }
-            ]
+            "name":"Toad",
+            "image":"./assets/char-images/toad.png",
+            "class":"s"
         },
         {
-            "name": "Toadette",
-            "image": "./assets/char-images/toadette.png",
-            "karts": [
-                {
-                    "name": "Booster Seat",
-                    "image": "./assets/kart-images/boosterseat.png"
-                },
-                {
-                    "name": "Mini Beast",
-                    "image": "./assets/kart-images/minibeast.png"
-                },
-                {
-                    "name": "Tiny Titan",
-                    "image": "./assets/kart-images/tinytitan.png"
-                },
-                {
-                    "name": "Cheep Charger",
-                    "image": "./assets/kart-images/cheepcharger.png"
-                },
-                {
-                    "name": "Blue Falcon",
-                    "image": "./assets/kart-images/bluefalcon.png"
-                },
-                {
-                    "name": "Bullet Bike",
-                    "image": "./assets/kart-images/bulletbike.png"
-                },
-                {
-                    "name": "Bit Bike",
-                    "image": "./assets/kart-images/bitbike.png"
-                },
-                {
-                    "name": "Quacker",
-                    "image": "./assets/kart-images/quacker.png"
-                },{
-                    "name": "Magikruiser",
-                    "image": "./assets/kart-images/magikruiser.png"
-                },
-                {
-                    "name": "Jet Bubble",
-                    "image": "./assets/kart-images/jetbubble.png"
-                }
-            ]
+            "name":"Toadette",
+            "image":"./assets/char-images/toadette.png",
+            "class":"s"
         },
         {
-            "name": "Koopa Troopa",
-            "image": "./assets/char-images/koopatroopa.png",
-            "karts": [
-                {
-                    "name": "Booster Seat",
-                    "image": "./assets/kart-images/boosterseat.png"
-                },
-                {
-                    "name": "Mini Beast",
-                    "image": "./assets/kart-images/minibeast.png"
-                },
-                {
-                    "name": "Tiny Titan",
-                    "image": "./assets/kart-images/tinytitan.png"
-                },
-                {
-                    "name": "Cheep Charger",
-                    "image": "./assets/kart-images/cheepcharger.png"
-                },
-                {
-                    "name": "Blue Falcon",
-                    "image": "./assets/kart-images/bluefalcon.png"
-                },
-                {
-                    "name": "Bullet Bike",
-                    "image": "./assets/kart-images/bulletbike.png"
-                },
-                {
-                    "name": "Bit Bike",
-                    "image": "./assets/kart-images/bitbike.png"
-                },
-                {
-                    "name": "Quacker",
-                    "image": "./assets/kart-images/quacker.png"
-                },{
-                    "name": "Magikruiser",
-                    "image": "./assets/kart-images/magikruiser.png"
-                },
-                {
-                    "name": "Jet Bubble",
-                    "image": "./assets/kart-images/jetbubble.png"
-                }
-            ]
+            "name":"Koopa Troopa",
+            "image":"./assets/char-images/koopatroopa.png",
+            "class":"s"
         },
         {
-            "name": "Dry Bones",
-            "image": "./assets/char-images/drybones.png",
-            "karts": [
-                {
-                    "name": "Booster Seat",
-                    "image": "./assets/kart-images/boosterseat.png"
-                },
-                {
-                    "name": "Mini Beast",
-                    "image": "./assets/kart-images/minibeast.png"
-                },
-                {
-                    "name": "Tiny Titan",
-                    "image": "./assets/kart-images/tinytitan.png"
-                },
-                {
-                    "name": "Cheep Charger",
-                    "image": "./assets/kart-images/cheepcharger.png"
-                },
-                {
-                    "name": "Blue Falcon",
-                    "image": "./assets/kart-images/bluefalcon.png"
-                },
-                {
-                    "name": "Bullet Bike",
-                    "image": "./assets/kart-images/bulletbike.png"
-                },
-                {
-                    "name": "Bit Bike",
-                    "image": "./assets/kart-images/bitbike.png"
-                },
-                {
-                    "name": "Quacker",
-                    "image": "./assets/kart-images/quacker.png"
-                },{
-                    "name": "Magikruiser",
-                    "image": "./assets/kart-images/magikruiser.png"
-                },
-                {
-                    "name": "Jet Bubble",
-                    "image": "./assets/kart-images/jetbubble.png"
-                }
-            ]
+            "name":"Dry Bones",
+            "image":"./assets/char-images/drybones.png",
+            "class":"s"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Mario",
+            "image":"./assets/char-images/mario.png",
+            "class":"m"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Luigi",
+            "image":"./assets/char-images/luigi.png",
+            "class":"m"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Peach",
+            "image":"./assets/char-images/peach.png",
+            "class":"m"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Daisy",
+            "image":"./assets/char-images/daisy.png",
+            "class":"m"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Ypshi",
+            "image":"./assets/char-images/yoshi.png",
+            "class":"m"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Birdo",
+            "image":"./assets/char-images/birdo.png",
+            "class":"m"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Diddy Kong",
+            "image":"./assets/char-images/diddykong.png",
+            "class":"m"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Bowser Jr.",
+            "image":"./assets/char-images/bowserjr.png",
+            "class":"m"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Wario",
+            "image":"./assets/char-images/wario.png",
+            "class":"l"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Waluigi",
+            "image":"./assets/char-images/waluigi.png",
+            "class":"l"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Donkey Kong",
+            "image":"./assets/char-images/donkeykong.png",
+            "class":"l"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Bowser",
+            "image":"./assets/char-images/bowser.png",
+            "class":"l"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Rosalina",
+            "image":"./assets/char-images/rosalina.png",
+            "class":"l"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"King Boo",
+            "image":"./assets/char-images/kingboo.png",
+            "class":"l"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Funky Kong",
+            "image":"./assets/char-images/funkykong.png",
+            "class":"l"
         },
         {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
-        },
-        {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
-        },
-        {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
-        },
-        {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
-        },
-        {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
-        },
-        {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
-        },
-        {
-            "name": "",
-            "image": "",
-            "karts": [
-                {
-                    "name": "",
-                    "image": "./assets/kart-images/"
-                }
-            ]
+            "name":"Dry Bowser",
+            "image":"./assets/char-images/drybowser.png",
+            "class":"l"
         }
     ]
 }
