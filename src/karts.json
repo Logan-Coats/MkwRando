@@ -1,0 +1,44 @@
+{
+    "s":[
+        {"name":"Standard Kart S","image":"./assets/kart-images/kart-s.png"},
+        {"name":"Booster Seat","image":"./assets/kart-images/boosterseat.png"},
+        {"name":"Mini Beast","image":"./assets/kart-images/minibeast.png"},
+        {"name":"Tiny Titan","image":"./assets/kart-images/tinytitan.png"},
+        {"name":"Cheep Charger","image":"./assets/kart-images/cheepcharger.png"},
+        {"name":"Blue Falcon","image":"./assets/kart-images/bluefalcon.png"},
+        {"name":"Standard Bike S","image":"./assets/kart-images/bike-s.png"},
+        {"name":"Bullet Bike","image":"./assets/kart-images/bulletbike.png"},
+        {"name":"Bit Bike","image":"./assets/kart-images/bitbike.png"},
+        {"name":"Quacker","image":"./assets/kart-images/quacker.png"},
+        {"name":"Magikruiser","image":"./assets/kart-images/magikruiser.png"},
+        {"name":"Jet Bubble","image":"./assets/kart-images/jetbubble.png"}
+    ],
+    "m":[
+        {"name":"Standard Kart M","image":"./assets/kart-images/kart-m.png"},
+        {"name":"Classic Dragster","image":"./assets/kart-images/classicdragster.png"},
+        {"name":"Wild Wing","image":"./assets/kart-images/wildwing.png"},
+        {"name":"Super Blooper","image":"./assets/kart-images/superblooper.png"},
+        {"name":"Daytripper","image":"./assets/kart-images/daytripper.png"},
+        {"name":"Sprinter","image":"./assets/kart-images/sprinter.png"},
+        {"name":"Standard Bike M","image":"./assets/kart-images/bike-m.png"},
+        {"name":"Mach Bike","image":"./assets/kart-images/machbike.png"},
+        {"name":"Sugarscoot","image":"./assets/kart-images/sugarscoot.png"},
+        {"name":"Zip Zip","image":"./assets/kart-images/zipzip.png"},
+        {"name":"Sneakster","image":"./assets/kart-images/sneakster.png"},
+        {"name":"Dolphin Dasher","image":"./assets/kart-images/dolphindasher.png"}
+    ],
+    "l":[
+        {"name":"Standard Kart L","image":"./assets/kart-images/kart-l.png"},
+        {"name":"Offroader","image":"./assets/kart-images/offroader.png"},
+        {"name":"Flame Flyer","image":"./assets/kart-images/flameflyer.png"},
+        {"name":"Piranha Prowler","image":"./assets/kart-images/piranhaprowler.png"},
+        {"name":"Jetsetter","image":"./assets/kart-images/jetsetter.png"},
+        {"name":"Honeycoupe","image":"./assets/kart-images/honeycoupe.png"},
+        {"name":"Standard Bike L","image":"./assets/kart-images/bike-l.png"},
+        {"name":"Flame Runner","image":"./assets/kart-images/flamerunner.png"},
+        {"name":"Wario Bike","image":"./assets/kart-images/wariobike.png"},
+        {"name":"Shooting Star","image":"./assets/kart-images/shootingstar.png"},
+        {"name":"Spear","image":"./assets/kart-images/spear.png"},
+        {"name":"Phantom","image":"./assets/kart-images/phantom.png"}
+    ]
+}
