@@ -1,0 +1,125 @@
+{
+    "characters": 
+    [
+        {
+            "name":"Baby Mario",
+            "image":"./assets/char-images/babymario.png",
+            "class":"s"
+        },
+        {
+            "name":"Baby Luigi",
+            "image":"./assets/char-images/babyluigi.png",
+            "class":"s"
+        },
+        {
+            "name":"Baby Peach",
+            "image":"./assets/char-images/babypeach.png",
+            "class":"s"
+        },
+        {
+            "name":"Baby Daisy",
+            "image":"./assets/char-images/babydaisy.png",
+            "class":"s"
+        },
+        {
+            "name":"Toad",
+            "image":"./assets/char-images/toad.png",
+            "class":"s"
+        },
+        {
+            "name":"Toadette",
+            "image":"./assets/char-images/toadette.png",
+            "class":"s"
+        },
+        {
+            "name":"Koopa Troopa",
+            "image":"./assets/char-images/koopatroopa.png",
+            "class":"s"
+        },
+        {
+            "name":"Dry Bones",
+            "image":"./assets/char-images/drybones.png",
+            "class":"s"
+        },
+        {
+            "name":"Mario",
+            "image":"./assets/char-images/mario.png",
+            "class":"m"
+        },
+        {
+            "name":"Luigi",
+            "image":"./assets/char-images/luigi.png",
+            "class":"m"
+        },
+        {
+            "name":"Peach",
+            "image":"./assets/char-images/peach.png",
+            "class":"m"
+        },
+        {
+            "name":"Daisy",
+            "image":"./assets/char-images/daisy.png",
+            "class":"m"
+        },
+        {
+            "name":"Ypshi",
+            "image":"./assets/char-images/yoshi.png",
+            "class":"m"
+        },
+        {
+            "name":"Birdo",
+            "image":"./assets/char-images/birdo.png",
+            "class":"m"
+        },
+        {
+            "name":"Diddy Kong",
+            "image":"./assets/char-images/diddykong.png",
+            "class":"m"
+        },
+        {
+            "name":"Bowser Jr.",
+            "image":"./assets/char-images/bowserjr.png",
+            "class":"m"
+        },
+        {
+            "name":"Wario",
+            "image":"./assets/char-images/wario.png",
+            "class":"l"
+        },
+        {
+            "name":"Waluigi",
+            "image":"./assets/char-images/waluigi.png",
+            "class":"l"
+        },
+        {
+            "name":"Donkey Kong",
+            "image":"./assets/char-images/donkeykong.png",
+            "class":"l"
+        },
+        {
+            "name":"Bowser",
+            "image":"./assets/char-images/bowser.png",
+            "class":"l"
+        },
+        {
+            "name":"Rosalina",
+            "image":"./assets/char-images/rosalina.png",
+            "class":"l"
+        },
+        {
+            "name":"King Boo",
+            "image":"./assets/char-images/kingboo.png",
+            "class":"l"
+        },
+        {
+            "name":"Funky Kong",
+            "image":"./assets/char-images/funkykong.png",
+            "class":"l"
+        },
+        {
+            "name":"Dry Bowser",
+            "image":"./assets/char-images/drybowser.png",
+            "class":"l"
+        }
+    ]
+}
