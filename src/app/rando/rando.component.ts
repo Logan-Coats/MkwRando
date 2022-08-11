@@ -14,7 +14,7 @@ export class RandoComponent implements OnInit {
   constructor() { }
 
   charList:any[] = [] //not safely typed but for my purposes it does not matter too much.
-  kartList:any[] = []
+  kartList:any[] = [] //not safely typed but for my purposes it does not matter too much.
   num : number = 0
   ngOnInit(): void {
     this.getCharacters()
