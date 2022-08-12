@@ -18,15 +18,14 @@ export class RandoComponent implements OnInit {
   kartList:any[] = [] //not safely typed but for my purposes it does not matter too much.
   num : number = 0
   numOfPlayers:any
-  charList: any
-  charList2: any
+  charList: any[] = []
   ngOnInit(): void {
     
   }
 
   create(){
+    console.log("generating "+ this.numOfPlayers+ " characters")
     this.getCharacters()
-    this.charList2 = new char()
     if(this.numOfPlayers == 1){
       this.randomChar()
     }else if(this.numOfPlayers == 2){
@@ -36,14 +35,13 @@ export class RandoComponent implements OnInit {
     }else{
       this.fourRandomChar()
     }
-    console.log( this.charList2)
   }
   
   getCharacters(){
-    let newchar = new char()
-    this.charList = newchar.charList
-    console.log(this.charList)
-    console.log(new char())
+    this.charList = []
+    for(let i = 0; i < 24; i++){
+      this.charList.push(charactersJson.characters[i])
+    }
   }
 
   getKarts(weightClass:string){
