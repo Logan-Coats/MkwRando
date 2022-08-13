@@ -16,4 +16,8 @@ export class StartComponent implements OnInit {
   toRando(){
     this.router.navigate(['rando'])
   } 
+
+  toTracksOnly(){
+    this.router.navigate(['rando-tracks'])
+  }
 }
