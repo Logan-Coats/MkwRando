@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import charactersJson from '../../characters.json'
+import charactersJson from '../../characters.json';
+import tracksJson from '../../tracks.json';
 //const chars = require('../../characters.json');
 const karts = require('../../karts.json');
 
@@ -14,16 +15,17 @@ export class RandoComponent implements OnInit {
   selectedValue!: string;
 
   constructor() { }
-  //charList:any[] = [] //not safely typed but for my purposes it does not matter too much.
+  charList:any[] = [] //not safely typed but for my purposes it does not matter too much.
   kartList:any[] = [] //not safely typed but for my purposes it does not matter too much.
+  trackList:any[] = []
   num : number = 0
   numOfPlayers:any
-  charList: any[] = []
   ngOnInit(): void {
     
   }
 
   create(){
+    //generate characters
     console.log("generating "+ this.numOfPlayers+ " characters")
     this.getCharacters()
     if(this.numOfPlayers == 1){
@@ -35,12 +37,21 @@ export class RandoComponent implements OnInit {
     }else{
       this.fourRandomChar()
     }
+    //generate track
+    this.randomTrack()
   }
   
   getCharacters(){
     this.charList = []
     for(let i = 0; i < 24; i++){
       this.charList.push(charactersJson.characters[i])
+    }
+  }
+
+  getTracks(){
+    this.trackList = []
+    for(let i = 0; i < 32; i++){
+      this.trackList.push(tracksJson.tracks[i])
     }
   }
 
@@ -149,10 +160,11 @@ export class RandoComponent implements OnInit {
     
     console.log(player4.name + " riding in " + kart4.name)
   }
-}
-class char {
-  readonly charList: any[];
-  constructor(){
-    this.charList = charactersJson.characters;
+
+  randomTrack(){
+    this.getTracks()
+    this.num = this.random(32)
+    let track = this.trackList[this.num]
+    console.log(track)
   }
 }
