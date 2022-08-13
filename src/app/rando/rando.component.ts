@@ -22,6 +22,7 @@ export class RandoComponent implements OnInit {
   num : number = 0
   numOfPlayers:any = 4;
   generatedChars:any[] = [];
+  generatedTracks:any[] = [];
   ngOnInit(): void {
     
   }
@@ -31,24 +32,17 @@ export class RandoComponent implements OnInit {
     this.generatedChars = []
     console.log("generating "+ this.numOfPlayers+ " characters")
     this.getCharacters()
-    if(this.numOfPlayers == 1){
-      this.randomChar(24)
-    }else if(this.numOfPlayers == 2){
-      this.randomChar(24)
-      this.randomChar(23)
-    }else if( this.numOfPlayers == 3){
-      this.randomChar(24)
-      this.randomChar(23)
-      this.randomChar(22)
-    }else{
-      this.randomChar(24)
-      this.randomChar(23)
-      this.randomChar(22)
-      this.randomChar(21)
+    for(let i = 0; i < this.numOfPlayers; i++){
+      this.randomChar(24-i)
     }
     console.log(this.generatedChars)
     //generate track(s)
-    this.randomTrack()
+    this.generatedTracks = []
+    this.getTracks()
+    for(let i = 0; i<4; i++){
+      this.randomTracks(32-i)
+    }
+    console.log(this.generatedTracks)
   }
   
   getCharacters(){
@@ -89,25 +83,9 @@ export class RandoComponent implements OnInit {
     this.generatedChars.push({"character": player.name,"char-img":player.image,"kart": kart.name, "kart-img":kart.image})
   }
   
-  randomTrack(){ //add functionality later to not generate duplicate?
-    this.getTracks()
-    this.num = this.random(32)
+  randomTracks(cap:number){ //add functionality later to not generate duplicate?
+    this.num = this.random(cap)
     let track = this.trackList[this.num]
-    console.log(track)
-
-    this.getTracks()
-    this.num = this.random(31)
-    let track2 = this.trackList[this.num]
-    console.log(track2)
-
-    this.getTracks()
-    this.num = this.random(30)
-    let track3 = this.trackList[this.num]
-    console.log(track3)
-
-    this.getTracks()
-    this.num = this.random(29)
-    let track4 = this.trackList[this.num]
-    console.log(track4)
+    this.generatedTracks.push({"track":track.name , "image":track.image})
   }
 }
