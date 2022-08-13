@@ -8,6 +8,7 @@ import tracksJson from '../../tracks.json';
 export class TracksComponent implements OnInit {
   trackList:any[] = []
   num:number = 0;
+  generatedTracks:any[] = []
   constructor() { }
 
   ngOnInit(): void {
@@ -15,6 +16,15 @@ export class TracksComponent implements OnInit {
 
   }
   
+  generateTracks(){
+    this.generatedTracks = []
+    this.getTracks()
+    for(let i = 0; i < 4; i++){
+      this.randomTracks(32-i)
+    }
+    console.log(this.generatedTracks)
+  }
+
   random(max:number){
     return Math.floor(Math.random() * max);
   }
@@ -26,26 +36,10 @@ export class TracksComponent implements OnInit {
     }
   }
 
-  generateTracks(){
-    this.getTracks()
-    this.num = this.random(32)
+  randomTracks(cap:number){ //add functionality later to not generate duplicate?
+    this.num = this.random(cap)
     let track = this.trackList[this.num]
-    console.log(track)
-
-    this.getTracks()
-    this.num = this.random(31)
-    let track2 = this.trackList[this.num]
-    console.log(track2)
-
-    this.getTracks()
-    this.num = this.random(30)
-    let track3 = this.trackList[this.num]
-    console.log(track3)
-
-    this.getTracks()
-    this.num = this.random(29)
-    let track4 = this.trackList[this.num]
-    console.log(track4)
+    this.generatedTracks.push({"track":track.name , "image":track.image})
   }
 
 }

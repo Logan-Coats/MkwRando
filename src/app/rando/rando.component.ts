@@ -80,7 +80,7 @@ export class RandoComponent implements OnInit {
     this.charList.splice(this.num,1)
     this.num = this.random(6)
     let kart = kartList[this.num]
-    this.generatedChars.push({"character": player.name,"char-img":player.image,"kart": kart.name, "kart-img":kart.image})
+    this.generatedChars.push({"character": player.name,"char_img":player.image,"kart": kart.name, "kart_img":kart.image})
   }
   
   randomTracks(cap:number){ //add functionality later to not generate duplicate?

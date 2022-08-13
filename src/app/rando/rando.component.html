@@ -20,9 +20,22 @@
     </mat-card-header>
     <mat-card-content>
       {{char.character}} <br/>
-      {{char.kart}}
+      <img [src]="char.char_img">
+      {{char.kart}} <br/>
+      <img class="kartimg" [src]="char.kart_img">
     </mat-card-content>
   </mat-card>
 </div>
 
+<div *ngIf="generatedTracks.length != 0">
+  <mat-card *ngFor="let track of generatedTracks">
+    <mat-card-header>
+      Course {{generatedTracks.indexOf(track)+1}}
+    </mat-card-header>
+    <mat-card-content>
+      {{track.track}} <br/>
+      <img class="trackimg" [src]="track.image">
+    </mat-card-content>
+  </mat-card>
+</div>
 
