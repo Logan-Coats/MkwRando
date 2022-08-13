@@ -1,1 +1,17 @@
-<button mat-raised-button color="primary" class="m-2" (click)="generateTracks()">Generate Tracks</button>
+<div style="justify-content: center;display:grid;">
+    <button mat-raised-button color="primary" class="m-2"  (click)="generateTracks()">Generate Tracks</button>
+</div>
+
+<div *ngIf="generatedTracks.length != 0">
+    <mat-card *ngFor="let track of generatedTracks">
+      <mat-card-header>
+        Course {{generatedTracks.indexOf(track)+1}}
+      </mat-card-header>
+      <mat-card-content>
+        {{track.track}} <br/>
+        <img class="trackimg" [src]="track.image">
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
+  
