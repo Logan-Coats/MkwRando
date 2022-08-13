@@ -161,10 +161,25 @@ export class RandoComponent implements OnInit {
     console.log(player4.name + " riding in " + kart4.name)
   }
 
-  randomTrack(){
+  randomTrack(){ //add functionality later to not generate duplicate?
     this.getTracks()
     this.num = this.random(32)
     let track = this.trackList[this.num]
     console.log(track)
+
+    this.getTracks()
+    this.num = this.random(31)
+    let track2 = this.trackList[this.num]
+    console.log(track2)
+
+    this.getTracks()
+    this.num = this.random(30)
+    let track3 = this.trackList[this.num]
+    console.log(track3)
+
+    this.getTracks()
+    this.num = this.random(29)
+    let track4 = this.trackList[this.num]
+    console.log(track4)
   }
 }
