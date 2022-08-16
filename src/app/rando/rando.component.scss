@@ -2,19 +2,30 @@
 
 .formclass {
     display:grid;
-    justify-content: center; 
+    justify-content: center;
 }
-.kartimg {
-    height:170px;
-    width:auto;/*maintain aspect ratio*/
-}
+
 .trackimg {
     height:170px;
     width:auto;/*maintain aspect ratio*/
 }
 .prof{
-    background-color: gainsboro;
+    background-color:rgb(80, 80, 80);
     width: 68px;
-    border: 2px solid blue;
-    
+    border: 2px solid rgb(0, 0, 0);
+}
+.kartprof{
+    background-color: rgb(80, 80, 80);
+    width: 404px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+.card-bod{
+    background-color: rgb(124, 124, 124);
+    color: white;
+    margin: 8px;
+}
+.selector {
+    width: 100%;
+    margin: 8px;
 }

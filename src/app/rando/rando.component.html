@@ -2,7 +2,7 @@
   <form>
     <mat-form-field appearance="fill">
         <mat-label>Number of Players</mat-label>
-        <mat-select selected="numOfPlayers" [(value)]="numOfPlayers">
+        <mat-select class="selector" selected="numOfPlayers" [(value)]="numOfPlayers">
           <mat-option value="1">1</mat-option>
           <mat-option value="2">2</mat-option>
           <mat-option value="3">3</mat-option>
@@ -14,8 +14,8 @@
     <button mat-raised-button style="float:right" color="primary" (click)="create()">Randomize</button>
 </div>
 
-<div *ngIf="generatedChars.length != 0" style="margin:8px">
-  <mat-card *ngFor="let char of generatedChars">
+<div *ngIf="generatedChars.length != 0" >
+  <mat-card class="card-bod" *ngFor="let char of generatedChars">
     <mat-card-header>
       Player {{generatedChars.indexOf(char)+1}}
     </mat-card-header>
@@ -26,13 +26,16 @@
       </div>
       
       {{char.kart}} <br/>
-      <img class="kartimg" [src]="char.kart_img">
+      <div class="kartprof">
+        <img class="kartimg" [src]="char.kart_img">
+      </div>
+      
     </mat-card-content>
   </mat-card>
 </div>
 
 <div *ngIf="generatedTracks.length != 0">
-  <mat-card *ngFor="let track of generatedTracks">
+  <mat-card class="card-bod" *ngFor="let track of generatedTracks">
     <mat-card-header>
       Course {{generatedTracks.indexOf(track)+1}}
     </mat-card-header>
