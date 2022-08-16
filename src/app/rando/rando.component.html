@@ -10,17 +10,21 @@
         </mat-select>
     </mat-form-field>
     </form>
+
     <button mat-raised-button style="float:right" color="primary" (click)="create()">Randomize</button>
 </div>
 
-<div *ngIf="generatedChars.length != 0">
+<div *ngIf="generatedChars.length != 0" style="margin:8px">
   <mat-card *ngFor="let char of generatedChars">
     <mat-card-header>
       Player {{generatedChars.indexOf(char)+1}}
     </mat-card-header>
     <mat-card-content>
       {{char.character}} <br/>
-      <img [src]="char.char_img">
+      <div class="prof">
+        <img [src]="char.char_img">
+      </div>
+      
       {{char.kart}} <br/>
       <img class="kartimg" [src]="char.kart_img">
     </mat-card-content>
