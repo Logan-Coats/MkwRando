@@ -2,3 +2,13 @@
     height:170px;
     width:auto;/*maintain aspect ratio*/
 }
+.formclass {
+    display:grid;
+    justify-content: center;
+}
+.card-bod{
+    background-color:rgb(156, 61, 156);
+    color: white;
+    margin: 2%;
+    width: 96%;
+}
