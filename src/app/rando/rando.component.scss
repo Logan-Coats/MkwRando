@@ -10,20 +10,21 @@
     width:auto;/*maintain aspect ratio*/
 }
 .prof{
-    background-color:rgb(80, 80, 80);
+    background-color:rgb(80, 0, 80);
     width: 68px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
 }
 .kartprof{
-    background-color: rgb(80, 80, 80);
-    width: 404px;
-    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(80, 0, 80);
+    width: 94%;
+    border: 1% solid rgb(255, 255, 255);
     border-radius: 5px;
 }
 .card-bod{
-    background-color: rgb(124, 124, 124);
+    background-color:rgb(156, 61, 156);
     color: white;
-    margin: 8px;
+    margin: 2%;
+    width: 96%;
 }
 .selector {
     width: 100%;
