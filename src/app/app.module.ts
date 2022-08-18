@@ -11,6 +11,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { TracksComponent } from './tracks/tracks.component';
 import { MatCardModule } from '@angular/material/card';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatExpansionModule } from '@angular/material/expansion';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
-    ScrollingModule
+    ScrollingModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

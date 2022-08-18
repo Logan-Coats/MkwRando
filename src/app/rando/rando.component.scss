@@ -3,6 +3,7 @@
 .formclass {
     display:grid;
     justify-content: center;
+    margin-top: 16px;
 }
 
 .trackimg {
@@ -28,9 +29,18 @@
 }
 .selector {
     width: 100%;
-    margin: 8px;
+    margin-bottom:8px;
 }
 
 .kartimg {
     width:90%;
 }
+
+.panel {
+    margin:8px !important
+} 
+.mat-expansion-panel-body {
+    margin:8px;
+    padding-left:0px;
+    padding-right:0px;
+} 

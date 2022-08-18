@@ -23,6 +23,8 @@ export class RandoComponent implements OnInit {
   numOfPlayers:any = 4;
   generatedChars:any[] = [];
   generatedTracks:any[] = [];
+
+  panelOpenState = false;
   ngOnInit(): void {
     
   }
