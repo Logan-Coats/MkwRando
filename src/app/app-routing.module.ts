@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RandoComponent } from './rando/rando.component';
 import { StartComponent } from './start/start.component';
-import { TracksComponent } from './tracks/tracks.component';
 
 const routes: Routes = [
   {
@@ -13,10 +12,6 @@ const routes: Routes = [
     path: 'rando',
     component:RandoComponent
   },
-  {
-    path: 'rando-tracks',
-    component:TracksComponent
-  }
 ];
 
 @NgModule({

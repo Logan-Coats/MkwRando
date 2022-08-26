@@ -1,13 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import charactersJson from '../../characters.json';
-import tracksJson from '../../tracks.json';
-//const chars = require('../../characters.json');
 const karts = require('../../karts.json');
 
 @Component({
   selector: 'app-rando',
   templateUrl: './rando.component.html',
-  styleUrls: ['./rando.component.scss']
+  styleUrls: ['./rando.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 
 
@@ -17,28 +16,23 @@ export class RandoComponent implements OnInit {
   constructor() { }
   charList:any[] = [] //not safely typed but for my purposes it does not matter too much.
   kartList:any[] = [] //not safely typed but for my purposes it does not matter too much.
-  trackList:any[] = []
   num : number = 0
-  numOfPlayers:any
+  numOfPlayers:any = 4;
+  generatedChars:any[] = [];
+  panelOpenState = false;
   ngOnInit(): void {
     
   }
 
   create(){
     //generate characters
+    this.generatedChars = []
     console.log("generating "+ this.numOfPlayers+ " characters")
     this.getCharacters()
-    if(this.numOfPlayers == 1){
-      this.randomChar()
-    }else if(this.numOfPlayers == 2){
-      this.twoRandomChar()
-    }else if( this.numOfPlayers == 3){
-      this.threeRandomChar()
-    }else{
-      this.fourRandomChar()
+    for(let i = 0; i < this.numOfPlayers; i++){
+      this.randomChar(24-i)
     }
-    //generate track
-    this.randomTrack()
+    console.log(this.generatedChars)
   }
   
   getCharacters(){
@@ -48,12 +42,7 @@ export class RandoComponent implements OnInit {
     }
   }
 
-  getTracks(){
-    this.trackList = []
-    for(let i = 0; i < 32; i++){
-      this.trackList.push(tracksJson.tracks[i])
-    }
-  }
+ 
 
   getKarts(weightClass:string){
     if(weightClass == "l"){
@@ -69,117 +58,13 @@ export class RandoComponent implements OnInit {
     return Math.floor(Math.random() * max);
   }
 
-  randomChar(){
-    this.num = this.random(24)
-    let player = this.charList[this.num]
-    let kartList = this.getKarts(player.class)
-    
-    this.num = this.random(6)
-    let kart = kartList[this.num]
-    
-    console.log(player.name + " riding in " + kart.name)
-  }
-  
-  twoRandomChar(){
-    this.num = this.random(24)
+  randomChar(cap:number){
+    this.num = this.random(cap)
     let player = this.charList[this.num]
     let kartList = this.getKarts(player.class)
     this.charList.splice(this.num,1)
     this.num = this.random(6)
     let kart = kartList[this.num]
-    
-    console.log(player.name + " riding in " + kart.name)
-    this.num = this.random(23)
-    let player2 = this.charList[this.num]
-    let kartList2 = this.getKarts(player.class)
-    this.charList.splice(this.num,1)
-    this.num = this.random(6)
-    let kart2 = kartList2[this.num]
-    
-    console.log(player2.name + " riding in " + kart2.name)
-  }
-
-  threeRandomChar(){
-    this.num = this.random(24)
-    let player = this.charList[this.num]
-    let kartList = this.getKarts(player.class)
-    this.charList.splice(this.num,1)
-    this.num = this.random(6)
-    let kart = kartList[this.num]
-    
-    console.log(player.name + " riding in " + kart.name)
-    this.num = this.random(23)
-    let player2 = this.charList[this.num]
-    let kartList2 = this.getKarts(player2.class)
-    this.charList.splice(this.num,1)
-    this.num = this.random(6)
-    let kart2 = kartList2[this.num]
-    
-    console.log(player2.name + " riding in " + kart2.name)
-    this.num = this.random(22)
-    let player3 = this.charList[this.num]
-    let kartList3 = this.getKarts(player3.class)
-    this.charList.splice(this.num,1)
-    this.num = this.random(6)
-    let kart3 = kartList3[this.num]
-    
-    console.log(player3.name + " riding in " + kart3.name)
-  }
-
-  fourRandomChar(){
-    this.num = this.random(24)
-    let player = this.charList[this.num]
-    let kartList = this.getKarts(player.class)
-    this.charList.splice(this.num,1)
-    this.num = this.random(6)
-    let kart = kartList[this.num]
-    
-    console.log(player.name + " riding in " + kart.name)
-    this.num = this.random(23)
-    let player2 = this.charList[this.num]
-    let kartList2 = this.getKarts(player2.class)
-    this.charList.splice(this.num,1)
-    this.num = this.random(6)
-    let kart2 = kartList2[this.num]
-    
-    console.log(player2.name + " riding in " + kart2.name)
-    this.num = this.random(22)
-    let player3 = this.charList[this.num]
-    let kartList3 = this.getKarts(player3.class)
-    this.charList.splice(this.num,1)
-    this.num = this.random(6)
-    let kart3 = kartList3[this.num]
-    
-    console.log(player3.name + " riding in " + kart3.name)
-    this.num = this.random(21)
-    let player4 = this.charList[this.num]
-    let kartList4 = this.getKarts(player4.class)
-    this.charList.splice(this.num,1)
-    this.num = this.random(6)
-    let kart4 = kartList4[this.num]
-    
-    console.log(player4.name + " riding in " + kart4.name)
-  }
-
-  randomTrack(){ //add functionality later to not generate duplicate?
-    this.getTracks()
-    this.num = this.random(32)
-    let track = this.trackList[this.num]
-    console.log(track)
-
-    this.getTracks()
-    this.num = this.random(31)
-    let track2 = this.trackList[this.num]
-    console.log(track2)
-
-    this.getTracks()
-    this.num = this.random(30)
-    let track3 = this.trackList[this.num]
-    console.log(track3)
-
-    this.getTracks()
-    this.num = this.random(29)
-    let track4 = this.trackList[this.num]
-    console.log(track4)
+    this.generatedChars.push({"character": player.name,"char_img":player.image,"kart": kart.name, "kart_img":kart.image})
   }
 }
