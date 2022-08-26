@@ -8,7 +8,6 @@ import { RandoComponent } from './rando/rando.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
-import { TracksComponent } from './tracks/tracks.component';
 import { MatCardModule } from '@angular/material/card';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -18,7 +17,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
     AppComponent,
     StartComponent,
     RandoComponent,
-    TracksComponent
   ],
   imports: [
     BrowserModule,
